@@ -1,7 +1,7 @@
 node puppet.local {
   include role::master
 }
-node 'puppetserver.example.com' {
+node 'ip-10-0-1-47.ec2.internal' {
   notify { 'this is the puppet master': }
 }
 node default {
